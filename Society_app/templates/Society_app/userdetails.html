@@ -1,0 +1,16 @@
+<label for="firstname">First Name:  </label>{{ userdetails.first_name}} <br><br>
+
+<label for="lastname">Last Name:  </label>{{ userdetails.last_name}} <br><br>
+
+<label for="username">User Name:  </label>{{ userdetails.username}} <br><br>
+
+<label for="aboutme">About Me:  </label>{{ userdetails.about_me}} <br><br>
+
+<label for="birthdate">Birth date:  </label>{{ userdetails.birth_date}} <br><br>
+
+<label for="favmovies">Fav Movies:  </label>{{ userdetails.fav_movies}} <br><br>
+
+<label for="photo">Photo:  </label>{{ userdetails.photo_url}} <br><br>
+<img src="{{ userdetails.photo_url.url }}"><br><br>
+
+<button class="button"><a href="/society/people">Go Back</a></button>

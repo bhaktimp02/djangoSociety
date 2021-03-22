@@ -1,0 +1,9 @@
+<h1>Please select the user for their information</h1>
+<ul>
+	{% for user in userview_list %}
+	<li><a href="/people/{{ user.id }}/">
+		{{user.first_name}} <br><br>
+	{% endfor %}
+</ul>
+
+<button class="button"><a href="/society">Go Back</a></button>

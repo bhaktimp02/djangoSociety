@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<script>
+	function goBack() {
+	  window.history.back();
+	}
+</script>
+
+
+<h1>Please select the event for detail information</h1>
+<ul>
+	{{article_id}}
+	{% for event in eventview_list %}
+	<li><a href="/event/{{ event.id }}/">
+		
+		{{event.event_title}}<br><br>
+		
+	{% endfor %}
+</ul>
+
+<button class="button"><a href="/society">Go Back</a></button>
+
+</body>
+</html>
